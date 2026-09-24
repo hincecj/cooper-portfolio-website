@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cooper Hince</title>
+<meta name="description" content="Cooper Hince — Actuarial Science graduate focused on actuarial modelling, data analysis, mathematical modelling and quantitative problem solving.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"
+ onload="renderMathInElement(document.body,{delimiters:[
+ {left:'$$',right:'$$',display:true},{left:'\\(',right:'\\)',display:false}
+ ]})"></script>
+
+<style>
+:root{
+ --bg:#090c10;--panel:#10151b;--panel2:#151b22;--text:#edf2f7;
+ --muted:#9aa7b4;--line:#27313b;--accent:#72d6ff;--accent2:#9d8cff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}
+nav{position:sticky;top:0;z-index:20;background:rgba(9,12,16,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:1150px;margin:auto;padding:14px 24px;display:flex;gap:25px;align-items:center}
+.logo{font-weight:800;letter-spacing:-.02em;margin-right:auto}
+nav a{color:var(--muted);text-decoration:none;font-size:.92rem}
+nav a:hover{color:var(--text)}
+main{max-width:1150px;margin:auto;padding:0 24px}
+.hero{min-height:88vh;display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}
+.kicker{text-transform:uppercase;letter-spacing:.17em;color:var(--accent);font-size:.78rem;font-weight:800}
+h1{font-size:clamp(3.6rem,8vw,7rem);line-height:.9;letter-spacing:-.065em;margin:18px 0 25px}
+.hero p{max-width:720px}
+.lead{font-size:1.25rem;color:#c7d0d9}
+.contact{color:var(--muted);font-size:.95rem}
+.hero-card,.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px}
+.hero-card h3{margin-top:0}
+.stat{padding:17px 0;border-bottom:1px solid var(--line)}
+.stat:last-child{border-bottom:0}
+.stat strong{display:block;font-size:1.55rem}
+.stat span{color:var(--muted);font-size:.88rem}
+section{padding:95px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}
+.section-head h2{margin:0;font-size:2.5rem;letter-spacing:-.035em}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card h3{color:var(--accent);margin-top:0}
+.card p{color:#c5ced7}
+.timeline{display:grid;gap:16px}
+.project-card{display:grid;grid-template-columns:180px 1fr;gap:30px}
+.date{color:var(--accent);font-size:.86rem;font-weight:700}
+.project-card h3{margin:0 0 8px;color:var(--text)}
+.project-card ul{color:#c5ced7}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{border:1px solid var(--line);background:var(--panel2);padding:4px 9px;border-radius:999px;color:var(--muted);font-size:.78rem}
+pre{overflow:auto;background:#07090c;border:1px solid var(--line);border-radius:12px;padding:20px;font-family:"Cascadia Code","Fira Code",Consolas,monospace;font-size:.84rem;line-height:1.55}
+details{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:15px 18px;margin:18px 0}
+summary{cursor:pointer;color:var(--accent);font-weight:700}
+.math{overflow-x:auto;text-align:center;padding:12px 0}
+.sim{background:#050607;border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:22px}
+canvas{width:100%;max-width:700px;display:block;margin:auto;background:#000;border-radius:10px}
+.controls{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+button{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:9px 14px;cursor:pointer}
+button:hover{border-color:var(--accent);color:var(--accent)}
+.small{color:var(--muted);font-size:.9rem}
+footer{border-top:1px solid var(--line);padding:45px 24px;text-align:center;color:var(--muted)}
+@media(max-width:850px){
+ .hero{grid-template-columns:1fr;min-height:auto;padding:85px 0}
+ .grid{grid-template-columns:1fr}
+ .project-card{grid-template-columns:1fr;gap:5px}
+ nav a{display:none}
+}
+</style>
+</head>
+
+<body>
+<nav>
+ <div class="nav">
+  <div class="logo">Cooper Hince</div>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+ </div>
+</nav>
+
+<main>
+
+<header class="hero" id="about">
+ <div>
+  <h1>Cooper<br>Hince</h1>
+  <p class="lead">
+   Actuarial Science graduate with a strong quantitative foundation and a focus
+   on turning mathematical and financial problems into structured models,
+   analysis and interpretable results.
+  </p>
+  <p class="contact">Perth, Western Australia · cooper@hince.net · 0436 476 891</p>
+ </div>
+
+ <aside class="hero-card">
+  <h3>Achievements</h3>
+  <div class="stat"><strong>80.46</strong><span>CWA / WAM — Curtin University</span></div>
+  <div class="stat"><strong>99.30</strong><span>ATAR — Sacred Heart College</span></div>
+  <div class="stat"><strong>6</strong><span>Letters of Academic Commendation</span></div>
+ </aside>
+</header>
+
+<section>
+ <div class="section-head">
+  <div><h2>Quantitative problem solving</h2></div>
+ </div>
+
+ <div class="grid">
+  <div class="card">
+   <h3>Actuarial modelling</h3>
+   <p>
+    Life insurance pricing, cashflow projection, discounting, mortality
+    probabilities, expenses, required returns and financial risk.
+   </p>
+  </div>
+  <div class="card">
+   <h3>Data & model analysis</h3>
+   <p>
+    Quantitative modelling, sensitivity analysis, model assumptions and
+    examining how changes in inputs affect outputs.
+   </p>
+  </div>
+  <div class="card">
+   <h3>Mathematical computing</h3>
+   <p>
+    Numerical methods and computational experiments applied to differential
+    equations, stochastic models and physical systems.
+   </p>
+  </div>
+ </div>
+</section>
+
+<section id="experience">
+ <div class="section-head">
+  <div><h2>Experience</h2></div>
+ </div>
+
+ <div class="timeline">
+  <div class="card project-card">
+   <div class="date">Mar 2023 – Present</div>
+   <div>
+    <h3>Private · Mathematics Tutor</h3>
+    <ul>
+     <li>Tutor 20 students weekly across all levels of high school mathematics, from lower levels through to ATAR mathematics.</li>
+     <li>Adapt teaching methods according to difficulty level and individual learning style.</li>
+     <li>Communicate complex mathematical ideas in an accessible and meaningful way.</li>
+     <li>Create learning techniques tailored to each student's experience.</li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="card project-card">
+   <div class="date">Jul 2024 – Nov 2025</div>
+   <div>
+    <h3>Roof Plumber · Reflections Roofing</h3>
+    <ul>
+     <li>Applied practical problem solving and attention to detail in a hands-on work environment.</li>
+     <li>Worked to safety, quality and time requirements while completing physically demanding tasks.</li>
+     <li>Developed disciplined execution, reliability and accountability through day-to-day project work.</li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="card project-card">
+   <div class="date">Mar 2023 – Jul 2024</div>
+   <div>
+    <h3>Head Chef · Mad Mex</h3>
+    <ul>
+     <li>Worked effectively in a fast-paced operational environment with responsibility for day-to-day workflow.</li>
+     <li>Maintained consistency and attention to detail while preparing food to required standards.</li>
+     <li>Developed teamwork, communication and time-management skills under pressure.</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="education">
+ <div class="section-head">
+  <div><h2>Education</h2></div>
+ </div>
+ <div class="card project-card">
+  <div class="date">2023 – 2025</div>
+  <div>
+   <h3>Bachelor of Science (Actuarial Science) · Curtin University</h3>
+   <p>Graduated with a Bachelor of Science (Actuarial Science) from Curtin University, completing the degree from 2023 to 2025.</p>
+   <div class="tags"><span class="tag">Actuarial Science</span><span class="tag">Curtin University</span><span class="tag">Distinction</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="projects">
+ <div class="section-head">
+  <div><h2>Projects</h2></div>
+ </div>
+
+ <div class="timeline">
+
+  <article class="card project-card">
+   <div class="date">Jul 2025 – Oct 2025</div>
+   <div>
+    <h3>Valuing European Options</h3>
+    <ul>
+     <li>Used Geometric Brownian Motion to model an underlying asset price.</li>
+     <li>Developed a pricing function for European put and call options using Black-Scholes and the underlying asset value.</li>
+     <li>Utilised sensitivity analysis to understand how certain variables affect the final price.</li>
+    </ul>
+    <div class="tags"><span class="tag">Stochastic modelling</span><span class="tag">Black-Scholes</span><span class="tag">Sensitivity analysis</span><span class="tag">Financial mathematics</span></div>
+   </div>
+  </article>
+
+  <article class="card project-card">
+   <div class="date">Aug 2024 – Oct 2024</div>
+   <div>
+    <h3>Life Insurance Pricing</h3>
+    <ul>
+     <li>Calculated future cashflows from whole life, term, endowment and annuity assurance products.</li>
+     <li>Discounted cashflows to the present using associated probabilities and appropriate discount factors.</li>
+     <li>Determined premiums in the presence of expenses and required rates of return.</li>
+    </ul>
+    <div class="tags"><span class="tag">Life insurance</span><span class="tag">Cashflow modelling</span><span class="tag">Probability</span><span class="tag">Pricing</span></div>
+   </div>
+  </article>
+
+  <article class="card project-card">
+   <div class="date">Feb 2024 – May 2024</div>
+   <div>
+    <h3>Modelling Interest Rates</h3>
+    <ul>
+     <li>Forecasted potential future short rates using the Vasicek model.</li>
+     <li>Priced risky zero-coupon bonds using these forecasts.</li>
+     <li>Determined bond default probabilities and varied initial conditions to minimise this probability.</li>
+     <li>Conducted sensitivity analysis and examined model limitations.</li>
+    </ul>
+    <div class="tags"><span class="tag">Vasicek</span><span class="tag">Interest rates</span><span class="tag">Credit risk</span><span class="tag">Sensitivity analysis</span></div>
+   </div>
+  </article>
+
+  <article class="card project-card">
+   <div class="date">Aug 2026 – Sep 2026</div>
+   <div>
+    <h3>Three-Body Problem Simulation</h3>
+    <ul>
+     <li>Derived a discrete numerical recurrence for the motion of three interacting bodies from Newtonian gravity.</li>
+     <li>Translated the model into Python using NumPy, representing each body's position and velocity as vectors.</li>
+     <li>Used the recurrence to update the bodies step-by-step and visualised their trajectories with Matplotlib.</li>
+     <li>Experimented with different initial conditions to investigate circular, figure-eight and planetary-style motion.</li>
+    </ul>
+    <div class="tags"><span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Numerical modelling</span></div>
+   </div>
+  </article>
+
+ </div>
+
+ <section id="contact">
+ <div class="section-head">
+  <div><h2>Let's connect</h2></div>
+ </div>
+ <div class="card">
+  <p><strong>Email:</strong> <a style="color:var(--accent)" href="mailto:cooper@hince.net">cooper@hince.net</a></p>
+  <p><strong>Phone:</strong> 0436 476 891</p>
+  <p><strong>Location:</strong> Perth, Western Australia</p>
+ </div>
+</section>
+
+</main>
+
+<footer>Cooper Hince · Actuarial Science · Data Analysis · Mathematical Modelling</footer>
+
+<script>
+const threeCanvas=document.getElementById("threeCanvas");
+const tc=threeCanvas.getContext("2d");
+let threeRunning=true, threeMode="circular", bodies=[];
+const G=1, H=.005;
+
+function circular(){
+ return [
+  {x:0,y:.57735,vx:-1,vy:0},
+  {x:-.5,y:-.28868,vx:.5,vy:-.86603},
+  {x:.5,y:-.28868,vx:.5,vy:.86603}
+ ].map(b=>({...b,px:b.x-H*b.vx,py:b.y-H*b.vy}));
+}
+function figure8(){
+ return [
+  {x:.97000436,y:-.24308753,vx:.466203685,vy:.43236573},
+  {x:-.97000436,y:.24308753,vx:.466203685,vy:.43236573},
+  {x:0,y:0,vx:-.93240737,vy:-.86473146}
+ ].map(b=>({...b,px:b.x-H*b.vx,py:b.y-H*b.vy}));
+}
+function setThreeMode(m){threeMode=m;resetThree()}
+function resetThree(){
+ bodies=threeMode==="circular"?circular():figure8();
+ for(const b of bodies){
+  const a=accel(b,bodies);
+  b.px=b.x;b.py=b.y;
+  b.x+=H*b.vx+.5*H*H*a.x;
+  b.y+=H*b.vy+.5*H*H*a.y;
+ }
+}
+function accel(b,all){
+ let ax=0,ay=0;
+ for(const q of all){
+  if(q===b)continue;
+  const dx=q.x-b.x,dy=q.y-b.y,r2=dx*dx+dy*dy,r=Math.sqrt(r2);
+  const f=G/(r2*r);
+  ax+=f*dx;ay+=f*dy;
+ }
+ return{x:ax,y:ay};
+}
+function stepThree(){
+ const next=bodies.map(b=>{
+  const a=accel(b,bodies);
+  return{x:H*H*a.x+2*b.x-b.px,y:H*H*a.y+2*b.y-b.py,px:b.x,py:b.y};
+ });
+ bodies=next;
+}
+function drawThree(){
+ tc.clearRect(0,0,threeCanvas.width,threeCanvas.height);
+ const s=105,cx=threeCanvas.width/2,cy=threeCanvas.height/2;
+ for(const b of bodies){
+  tc.beginPath();tc.arc(cx+b.x*s,cy-b.y*s,6,0,2*Math.PI);
+  tc.fillStyle="#fff";tc.fill();
+ }
+}
+function animateThree(){
+ if(threeRunning)for(let i=0;i<3;i++)stepThree();
+ drawThree();requestAnimationFrame(animateThree);
+}
+function toggleThree(){threeRunning=!threeRunning}
+resetThree();animateThree();
+
+</script>
+</body>
+</html>
