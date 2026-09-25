@@ -4,15 +4,14 @@
 //   2. Add an entry below (newest first). "file" must match the filename
 //      you just added to /papers.
 //
-// Example — delete the /* */ once you add your first real paper:
-/*
+
 {
-  title: "Pricing European Options with the Crank–Nicolson Method",
-  date: "2026-03",
-  description: "A finite-difference scheme for the Black–Scholes PDE, checked against the closed-form solution.",
-  file: "crank-nicolson-options.pdf"
+  title: "Numerical Analysis: A Tourist's Guide | Part 1",
+  date: "2026-09",
+  description: "A derivation and application of a simple numerical differential equation solver, applied to simulate the famous three body problem and a damped pendulum in Python.",
+  file: "Numerical Analysis Part 1.pdf"
 },
-*/
+
 
 const papers = [
 
