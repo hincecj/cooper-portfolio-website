@@ -9,7 +9,7 @@
   title: "Numerical Analysis: A Tourist's Guide | Part 1",
   date: "2026-09",
   description: "A derivation and application of a simple numerical differential equation solver, applied to simulate the famous three body problem and a damped pendulum in Python.",
-  file: "Numerical Analysis Part 1.pdf"
+  file: "numerical_analysis_part_1.pdf"
 },
 
 
