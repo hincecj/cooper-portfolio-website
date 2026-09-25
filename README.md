@@ -1,6 +1,6 @@
-# cooper-portfolio
+# cooperhince
 
-Cooper Hince's personal site — actuarial science, data analysis and numerical
+Cooper's personal site — actuarial science, data analysis and numerical
 analysis work. Plain HTML/CSS/JS, no build step, made to run on GitHub Pages.
 
 ## Structure
@@ -35,12 +35,12 @@ The hero section currently shows a placeholder. Drop a photo into `assets/`
 and swap the placeholder for an `<img>` tag — see `assets/README.md` for the
 exact steps.
 
-## Adding a new section later
+## Adding a new section
 
 Each section in `index.html` is a `<section id="…">` with its own block in
 `style.css`. To add one: copy an existing `<section>`, give it a new `id`,
 add a matching link in the `<nav>` list, and style it under a new heading in
-`style.css`. Ask Claude to do this for you and point it at this repo.
+`style.css`.
 
 ## Running locally
 
@@ -49,10 +49,3 @@ No dependencies — just open `index.html` in a browser, or serve the folder:
 ```
 python3 -m http.server 8000
 ```
-
-## Deploying to GitHub Pages
-
-Push this repo to GitHub, then in the repo go to
-**Settings → Pages → Build and deployment → Deploy from a branch**, pick
-`main` and `/ (root)`, and save. The site will be live at
-`https://<username>.github.io/<repo-name>/` a minute or two later.
