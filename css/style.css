@@ -329,6 +329,7 @@ img.hero-photo {
   padding: 32px var(--gutter) 56px;
   color: var(--text-muted);
   font-size: 13px;
+  text-align: center;
 }
 .site-footer p { margin: 0; }
 
