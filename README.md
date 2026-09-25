@@ -29,12 +29,6 @@ assets/               ← put your profile photo in here
    ```
 3. Commit and push. No build step — the page picks it up on refresh.
 
-## Adding your photo
-
-The hero section currently shows a placeholder. Drop a photo into `assets/`
-and swap the placeholder for an `<img>` tag — see `assets/README.md` for the
-exact steps.
-
 ## Adding a new section
 
 Each section in `index.html` is a `<section id="…">` with its own block in
