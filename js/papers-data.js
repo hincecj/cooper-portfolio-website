@@ -18,7 +18,7 @@ const papers = [
   {
     title: "Numerical Analysis: A Tourist's Guide Part 1",
     date: "2026-09",
-    description: "Part 1 of the numerical analysis series covers a derivation of a simple numerical differential equation solver, applied to simulate the famous three body problem and a damped pendulum in Python.",
-    file: "numerical_analysis_part_1.pdf"
+    description: "Part 1 of the numerical analysis series covers a derivation of a simple numerical differential equation solver, applied to simulate the famous three body problem and a damped pendulum in Python. Write-up and Github code attached.",
+    file: "numerical_analysis_part_1.pdf", repo: "https://github.com/hincecj/numerical-analysis-part-1"
   },
 ];
