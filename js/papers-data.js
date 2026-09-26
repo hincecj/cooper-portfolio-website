@@ -11,13 +11,13 @@
 //   Include either one, or both, on the same entry.
 //
 // Examples (for reference, not live):
-//   { title: "...", date: "2026-09", description: "...", file: "some-paper.pdf" },
-//   { title: "...", date: "2026-09", description: "...", repo: "https://github.com/hincecj/some-repo" },
+//   { title: "...", date: "YYYY-MM", description: "...", file: "some-paper.pdf" },
+//   { title: "...", date: "YYYY-MM", description: "...", repo: "https://github.com/hincecj/some-repo" },
 
 const papers = [
   {
     title: "Numerical Analysis: A Tourist's Guide Part 1",
-    date: "2026-09-25",
+    date: "2026-09",
     description: "Part 1 of the numerical analysis series covers a derivation of a simple numerical differential equation solver, applied to simulate the famous three body problem and a damped pendulum in Python.",
     file: "numerical_analysis_part_1.pdf"
   },
